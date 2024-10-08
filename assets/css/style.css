@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Couleur des liens par défaut */
+a {
+    color: #ffffff; /* Couleur blanche pour les liens */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+header {
+    text-align: center;
+    background-color: #17abb3;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    margin-right: 20px;
+}
+
+.photo img {
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.header-text {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+}
+
+.contact-row p {
+    margin: 0 15px;
+}
+
+.info-container {
+    display: grid; /* Utilisation de la grille */
+    grid-template-columns: 1fr 2fr; /* Deux colonnes */
+    gap: 20px; /* Espace entre les colonnes */
+    margin-top: 20px;
+}
+
+.column {
+    padding: 15px;
+}
+
+.info {
+    margin-bottom: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    transition: background-color 0.3s; /* Transition pour le fond */
+}
+
+.info:hover {
+    background-color: rgba(183, 18, 18, 0.1); /* Fond de survol */
+}
+
+/* Styles de survol pour chaque div et span */
+.professional-title {
+    position: relative; 
+    padding: 5px; 
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    transition: background-color 0.3s; 
+}
+
+.professional-title:hover {
+    background-color: rgb(189, 188, 188); 
+}
+
+/* Ajout du trait sur le côté */
+.professional-title:hover::before {
+    content: ''; 
+    position: absolute; 
+    left: -10px; 
+    top: 0; 
+    height: 100%; 
+    width: 4px; 
+    background-color: #17abb3; 
+}
+
+h3 {
+    color: #17abb3;
+    margin-bottom: 10px;
+}
+
+.year {
+    font-style: italic; 
+    color: #17abb3; 
+    margin-top: 5px; 
+    min-width: 50px; 
+    text-align: right; 
+}
+
+.competence-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #17abb3;
+}
+
+.langue-column {
+    margin: 0 auto;
+}
+
+.langue-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.langue-nom {
+    font-weight: bold;
+    color: white;
+}
+
+.niveau {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: right;
+}
+
+.symbol {
+    color: #17abb3; 
+    margin-right: 5px;
+}
+
+.infostage {
+    margin-bottom: 5px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    transition: background-color 0.3s; /* Transition pour le fond */
+}
+
+.infostage:hover {
+    background-color: rgba(183, 18, 18, 0.1); /* Fond de survol pour les stages */
+}
+
+.infostage strong {
+    display: block; /* Affiche le titre en bloc */
+    color: #17abb3; /* Couleur pour le titre des stages */
+}
+
+.infostage .year {
+    font-style: italic; 
+    color: #17abb3; 
+    margin-top: 5px; 
+    min-width: 10px; 
+    text-align: right; 
+}
+footer {
+    background-color: #17abb3; /* Même couleur que les titres h3 */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white; /* Couleur des icônes */
+    margin: 0 10px;
+    font-size: 24px; /* Taille des icônes */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f0f0f0; /* Couleur au survol */
+}
+
+.update {
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif; /* Police par défaut */
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif; /* Applique Lato aux titres */
+}
+
+/* Autres styles ici... */
+
+footer {
+    background-color: #17abb3; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le contenu */
+    padding: 20px; /* Espacement interne */
+    margin-top: 30px; /* Espacement au-dessus du footer */
+}
+
+.footer-content {
+    max-width: 800px; /* Largeur maximum */
+    margin: 0 auto; /* Centre le footer */
+}
+
+.social-icons {
+    margin-bottom: 10px; /* Espace en dessous des icônes */
+}
+
+.social-icons a {
+    color: white; /* Couleur des icônes */
+    margin: 0 10px; /* Espace entre les icônes */
+    font-size: 24px; /* Taille des icônes */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.social-icons a:hover {
+    color: #f0f0f0; /* Couleur au survol */
+}
+
+/* Autres styles ici... */
+body {
+    font-family: 'Raleway', sans-serif; /* Applique Raleway à tout le corps */
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif; /* Applique Raleway aux titres */
+}
+
+p {
+    font-family: 'Raleway', sans-serif; /* Applique Raleway aux paragraphes */
+}
